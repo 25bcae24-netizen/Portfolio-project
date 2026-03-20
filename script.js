@@ -5,14 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener("submit", function (e) {
             e.preventDefault(); 
             
-            const nameVal = form.querySelector("[name='name']").value;
-            const emailVal = form.querySelector("[name='email']").value;
-            const messageVal = form.querySelector("[name='message']").value;
-
             const data = {
-                name: nameVal,
-                email: emailVal,
-                message: messageVal
+                name: form.querySelector("[name='name']").value,
+                email: form.querySelector("[name='email']").value,
+                message: form.querySelector("[name='message']").value
             };
 
             fetch("https://harshita-backend-project.onrender.com/contact", {
@@ -27,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(err => {
                 console.error("Fetch error:", err);
-                alert("Error sending message. Check console.");
+                alert("The server is waking up. Please wait 30 seconds and try again.");
             });
         });
     }
-}); // Ensure these closing brackets are here!
+});
