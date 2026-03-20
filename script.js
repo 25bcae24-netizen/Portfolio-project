@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
             })
-            .then(res => res.json())
+            .then(res => res.text())
             .then(result => {
                 alert("Message sent successfully!");
                 form.reset();
