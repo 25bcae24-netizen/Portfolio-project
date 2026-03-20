@@ -197,24 +197,28 @@
         <p>&copy; 2026 Harshita R. All rights reserved.</p>
     </footer>
 
-    <script>
+   <script scr="script.js"></script>
 document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
 
-  fetch("http://localhost:5000/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      name: document.querySelector("[name='name']").value,
-      email: document.querySelector("[name='email']").value,
-      message: document.querySelector("[name='message']").value
-    })
+ fetch("https://harshita-r-backend.onrender.com/contact", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name: document.querySelector("[name='name']").value,
+    email: document.querySelector("[name='email']").value,
+    message: document.querySelector("[name='message']").value
   })
-  .then(res => res.text())
-  .then(data => alert(data));
+})
+.then(() => {
+  alert("Message sent successfully!");
+  document.querySelector("form").reset();
+})
+.catch(() => {
+  alert("Error sending message");
 });
-</script>
+
 </body>
 </html>
