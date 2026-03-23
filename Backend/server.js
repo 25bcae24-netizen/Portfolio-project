@@ -6,8 +6,8 @@ const cors = require("cors");
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin:'https://25bcae24-netizen.github.io",
+  app.use(cors({
+  origin: "https://25bcae24-netizen.github.io", // ✅ NO /Portfolio-project
   methods: ["GET", "POST"],
   credentials: true
 }));
