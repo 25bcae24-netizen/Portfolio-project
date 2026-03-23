@@ -19,12 +19,10 @@ jobs:
         with:
           node-version: 18
 
-      # Install dependencies (backend)
+      # Install dependencies
       - name: Install dependencies
-        run: |
-          cd backend
-          npm install
+        run: npm install
 
-      # Success message
+      # Done
       - name: CI Passed
         run: echo "Build successful 🚀"
