@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Submitting form...");
 
-    fetch("https://harshita-r-backend.onrender.com/contact", {
+    fetch("https://harshita-backend-project.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
