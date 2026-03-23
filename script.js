@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".contact-form").addEventListener("submit", function(e){
     e.preventDefault();
 
-    alert("Form submitted"); // test
+    console.log("Submitting form...");
 
     fetch("https://harshita-r-backend.onrender.com/contact", {
       method: "POST",
@@ -16,11 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
         message: document.querySelector("[name='message']").value
       })
     })
-    .then(res => res.text())
-    .then(data => alert(data))
+    .then(res => {
+      console.log("Response received:", res);
+      return res.text();
+    })
+    .then(data => {
+      console.log("Server says:", data);
+      alert(data);
+    })
     .catch(err => {
+      console.log("Fetch error:", err);
       alert("Error connecting to backend");
-      console.log(err);
     });
 
   });
