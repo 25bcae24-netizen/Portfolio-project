@@ -1,59 +1,23 @@
-<<<<<<< HEAD
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector("form");
-
-    if (form) {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault(); 
-            
-            const data = {
-                name: form.querySelector("[name='name']").value,
-                email: form.querySelector("[name='email']").value,
-                message: form.querySelector("[name='message']").value
-            };
-
-            fetch("https://harshita-backend-project.onrender.com/contact", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data)
-            })
-            .then(res => res.text())
-            .then(result => {
-                alert("Message sent successfully!");
-                form.reset();
-            })
-            .catch(err => {
-                console.error("Fetch error:", err);
-                alert("The server is waking up. Please wait 30 seconds and try again.");
-            });
-        });
-    }
-});
-=======
-const form = document.querySelector("form");
-
-form.addEventListener("submit", function (e) {
+document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
-
-  const data = {
-    name: form.querySelector("[name='name']").value,
-    email: form.querySelector("[name='email']").value,
-    message: form.querySelector("[name='message']").value
-  };
 
   fetch("https://harshita-r-backend.onrender.com/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify(data)
+    body: JSON.stringify({
+      name: document.querySelector("[name='name']").value,
+      email: document.querySelector("[name='email']").value,
+      message: document.querySelector("[name='message']").value
+    })
   })
-  .then(() => {
-    alert("Message sent successfully!");
-    form.reset();
+  .then(res => res.text())
+  .then(data => {
+    alert(data);
   })
-  .catch(() => {
+  .catch(err => {
     alert("Error sending message");
+    console.log(err);
   });
 });
->>>>>>> 4d7928f (Added script.js and connected frontend to backend)
