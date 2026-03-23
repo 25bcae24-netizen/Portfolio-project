@@ -7,9 +7,8 @@ const app = express();
 
 // Middleware
   app.use(cors({
-  origin: "https://25bcae24-netizen.github.io", // ✅ NO /Portfolio-project
+  origin: "https://25bcae24-netizen.github.io", // ✅ ONLY DOMAIN
   methods: ["GET", "POST"],
-  credentials: true
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
