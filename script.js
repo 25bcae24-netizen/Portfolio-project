@@ -1,4 +1,4 @@
-document.querySelector("form").addEventListener("submit", function(e){
+document.querySelector(".contact-form").addEventListener("submit", function(e){
   e.preventDefault();
 
   fetch("https://harshita-r-backend.onrender.com/contact", {
