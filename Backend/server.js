@@ -11,6 +11,7 @@ app.use(cors({
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
+app.options("*",cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
