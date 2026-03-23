@@ -23,6 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Done
-      - name: CI Passed
-        run: echo "Build successful 🚀"
+      # ✅ ADD HERE (LAST STEP)
+      - name: Trigger Render Deploy
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
+        
