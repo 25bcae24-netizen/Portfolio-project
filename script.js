@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .then(res => {
       console.log("Response received:", res);
+      if(!res.ok) throw new Error("Server error");
       return res.text();
     })
     .then(data => {
