@@ -6,7 +6,11 @@ const cors = require("cors");
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -23,6 +27,9 @@ db.connect(err => {
 });
 
 // API Route (SAVE FORM DATA)
+app.get("/", (req, res) => {
+  res.send("Backend is working");
+});
 app.post("/contact", (req, res) => {
   const { name, email, message } = req.body;
 
