@@ -15,7 +15,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // DB Connection
-const db = mysql.createConnection(process.env.MYSQLPORT);
+const db = mysql.createConnection({
+  uri: process.env.MYSQL_URL
+});
 
 db.connect(err => {
   if (err) {
