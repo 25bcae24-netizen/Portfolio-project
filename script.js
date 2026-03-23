@@ -1,3 +1,4 @@
+alert("JS is working");
 document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
 
