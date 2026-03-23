@@ -1,4 +1,3 @@
-alert("JS is working");
 document.querySelector("form").addEventListener("submit", function(e){
   e.preventDefault();
 
@@ -13,12 +12,15 @@ document.querySelector("form").addEventListener("submit", function(e){
       message: document.querySelector("[name='message']").value
     })
   })
-  .then(res => res.text())
+  .then(res => {
+    console.log(res);
+    return res.text();
+  })
   .then(data => {
-    alert(data);
+    alert("Response: " + data);
   })
   .catch(err => {
-    alert("Error sending message");
+    alert("Error connecting to backend");
     console.log(err);
   });
 });
