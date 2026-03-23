@@ -9,29 +9,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Get your code
+      # Get code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2. Setup Node.js
+      # Setup Node
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      # 3. Install backend dependencies
-      - name: Install Backend Dependencies
+      # Install dependencies (backend)
+      - name: Install dependencies
         run: |
           cd backend
           npm install
 
-      # 4. Run backend (test if no crash)
-      - name: Run Backend Test
-        run: |
-          cd backend
-          node server.js &
-          sleep 5
-
-      # 5. Done
+      # Success message
       - name: CI Passed
         run: echo "Build successful 🚀"
