@@ -1,153 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshita R | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshita R Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px;
+      background: linear-gradient(45deg, #ff69b4, #00bfff);
+      color: black;
+    }
+
+    section {
+      padding: 40px;
+      border-bottom: 1px solid #333;
+    }
+
+    h2 {
+      color: #ff69b4;
+    }
+
+    a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    input, textarea {
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background: #ff69b4;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #00bfff;
+    }
+  </style>
 </head>
+
 <body>
-    <nav id="navbar">
-        <div class="container">
-            <h1 class="logo">Harshita R<span>.</span></h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </nav>
 
-    <header id="home" class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h2>Hello, I'm</h2>
-      <h1>Harshita R</h1>
-      <p>Aspiring developer passionate about building modern web solutions.</p>
+  <!-- HOME -->
+  <header>
+    <h1>Harshita R</h1>
+    <p>BCA Student | Aspiring Developer</p>
+    <p>📞 +91 6361918964</p>
+    <p>📧 your-25bcae24@kristujayanti.com</p>
+    <p>
+      <a href="https://github.com/25bcae24-netizen" target="_blank">GitHub</a> |
+      <a href="#">LinkedIn</a>
+    </p>
+  </header>
 
-      <div class="hero-btns reveal">
-        <a href="#contact" class="btn btn-primary">Let's Talk</a>
-        <a href="#projects" class="btn btn-secondary">View Work</a>
-      </div>
-    </div>
-  </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am Harshita R, currently pursuing my BCA (General) 2nd semester at Kristu Jayanti University. 
+      I am passionate about learning new technologies and building web applications. 
+      I enjoy improving my programming and problem-solving skills.
+    </p>
+    <p><strong>Interests:</strong> Web Development, DBMS</p>
+    <p><strong>Career Goal:</strong> To become a skilled software developer</p>
+  </section>
 
-  <div class="hero-bg">
-    <div class="circle circle-1"></div>
-    <div class="circle circle-2"></div>
-  </div>
-</header>
+  <!-- EDUCATION -->
+  <section id="education">
+  <h2>Education</h2>
 
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a dedicated BCA Student at <strong>Kristu Jayanti University</strong> with a strong interest in technology and software development. I enjoy tackling complex problems and creating efficient, user-friendly digital experiences.</p>
-                    <p>My goal is to continuously learn and grow in the ever-evolving field of web development, staying up-to-date with the latest tools and best practices.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <ul>
+    <li>
+      <strong>Bachelor of Computer Applications (BCA)</strong><br>
+      Kristu Jayanti University<br>
+      Currently in 2nd Semester (1st Semester Completed)<br>
+      CGPA (1st Sem): 7.5 / 10
+    </li>
 
-    <section id="skills" class="section bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Skills</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>SQL</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+    <li>
+      <strong>12th Standard (PUC)</strong><br>
+      St Charles Women's PU College<br>
+      Percentage: 86%
+    </li>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Projects</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A modern e-commerce solution with integrated payment gateways and user-friendly interface.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>AI Task Manager</h3>
-                        <p>An intelligent productivity tool that helps users organize their daily tasks using AI.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Flask</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Project 3">
-                    </div>
-                    <div class="project-info">
-                        <h3>Data Visualization Dashboard</h3>
-                        <p>A comprehensive dashboard for visualizing complex datasets with interactive charts.</p>
-                        <div class="project-tags">
-                            <span>D3.js</span>
-                            <span>Vue.js</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <li>
+      <strong>10th Standard (ICSE)</strong><br>
+      St Charles High School<br>
+      Percentage: 70%
+    </li>
+  </ul>
+
+</section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <h3>Technical Skills</h3>
+    <p>HTML, CSS, JavaScript, Python, MySQL</p>
+
+    <h3>Tools</h3>
+    <p>VS Code, GitHub</p>
+
+    <h3>Soft Skills</h3>
+    <p>Communication, Teamwork, Problem Solving</p>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <h3>Full-Stack Portfolio & Contact System</h3>
+    <p>
+      A full-stack web application with a responsive frontend and backend integration.
+      It includes a contact form that stores user messages in a MySQL database.
+    </p>
+
+    <p><strong>Technologies:</strong> HTML, CSS, JS, Node.js, MySQL</p>
+    <p><strong>Role:</strong> Developed frontend and backend</p>
+    <p><strong>Result:</strong> Successfully deployed with database connection</p>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>NASSCOM Certification</li>
+      <li>MongoDB Certification</li>
+      <li>Learnathon Certificate</li>
+    </ul>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <p>Participated in school and college events and learning programs</p>
+  </section>
 
     <section id="contact" class="section bg-dark">
         <div class="container">
