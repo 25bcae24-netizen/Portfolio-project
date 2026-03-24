@@ -563,3 +563,11 @@ footer p {
 .hero p {
   color: #00bfff; /* blue */
 }
+
+.skill-card {
+    cursor: pointer;
+}
+
+.skill-card:active {
+    transform: scale(0.97);
+}
