@@ -3,157 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshita R Portfolio</title>
+  <title>Harshita R | Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: white;
-    }
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    header {
-      text-align: center;
-      padding: 50px;
-      background: linear-gradient(45deg, #ff69b4, #00bfff);
-      color: black;
-    }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    section {
-      padding: 40px;
-      border-bottom: 1px solid #333;
-    }
-
-    h2 {
-      color: #ff69b4;
-    }
-
-    a {
-      color: #00bfff;
-      text-decoration: none;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-    }
-
-    input, textarea {
-      margin: 10px 0;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px;
-      background: #ff69b4;
-      color: black;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #00bfff;
-    }
-  </style>
+  <!-- Font Awesome (WORKING) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- HOME -->
-  <header>
-    <h1>Harshita R</h1>
-    <p>BCA Student | Aspiring Developer</p>
-    <p>📞 +91 6361918964</p>
-    <p>📧 your-25bcae24@kristujayanti.com</p>
-    <p>
-      <a href="https://github.com/25bcae24-netizen" target="_blank">GitHub</a> |
-      <a href="#">LinkedIn</a>
-    </p>
-  </header>
+<!-- NAVBAR -->
+<nav>
+  <h1>Harshita R.</h1>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am Harshita R, currently pursuing my BCA (General) 2nd semester at Kristu Jayanti University. 
-      I am passionate about learning new technologies and building web applications. 
-      I enjoy improving my programming and problem-solving skills.
-    </p>
-    <p><strong>Interests:</strong> Web Development, DBMS</p>
-    <p><strong>Career Goal:</strong> To become a skilled software developer</p>
-  </section>
+<!-- HOME -->
+<section id="home">
+  <h2>Hello, I'm</h2>
+  <h1>Harshita R</h1>
+  <p>Aspiring developer passionate about building modern web solutions.</p>
+</section>
 
-  <!-- EDUCATION -->
-  <div class="education-box">
-  <h3>BCA - Kristu Jayanti University</h3>
-  <p>Currently in 2nd Semester (1st Sem Completed)</p>
-  <p>CGPA: 7.5 / 10</p>
-</div>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a BCA student at Kristu Jayanti University with strong interest in web development 
+    and software technologies. I enjoy solving problems and building user-friendly applications.
+  </p>
+  <p><b>Interests:</b> Web Development, DBMS</p>
+  <p><b>Career Goal:</b> To become a skilled software developer</p>
+</section>
 
-<div class="education-box">
-  <h3>12th - St Charles Women's PU College</h3>
-  <p>Percentage: 86%</p>
-</div>
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
 
-<div class="education-box">
-  <h3>10th - St Charles High School (ICSE)</h3>
-  <p>Percentage: 70%</p>
-</div>
+  <div>
+    <h3>BCA - Kristu Jayanti University</h3>
+    <p>Currently in 2nd Semester (1st Semester Completed)</p>
+    <p>CGPA: 7.5 / 10</p>
+  </div>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
+  <div>
+    <h3>12th - St Charles Women's PU College</h3>
+    <p>Percentage: 86%</p>
+  </div>
 
-    <h3>Technical Skills</h3>
-    <p>HTML, CSS, JavaScript, Python, MySQL</p>
+  <div>
+    <h3>10th - St Charles High School (ICSE)</h3>
+    <p>Percentage: 70%</p>
+  </div>
+</section>
 
-    <h3>Tools</h3>
-    <p>VS Code, GitHub</p>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>My Skills</h2>
 
-    <h3>Soft Skills</h3>
-    <p>Communication, Teamwork, Problem Solving</p>
-  </section>
+  <h3>Technical Skills</h3>
+  <p>HTML, CSS, JavaScript, Python, MySQL</p>
 
-  <!-- PROJECT -->
-  <section id="projects">
-    <h2>Projects</h2>
+  <h3>Tools</h3>
+  <p>VS Code, GitHub</p>
 
-    <h3>Full-Stack Portfolio & Contact System</h3>
-    <p>
-      A full-stack web application with a responsive frontend and backend integration.
-      It includes a contact form that stores user messages in a MySQL database.
-    </p>
+  <h3>Soft Skills</h3>
+  <p>Communication, Teamwork, Problem Solving</p>
+</section>
 
-    <p><strong>Technologies:</strong> HTML, CSS, JS, Node.js, MySQL</p>
-    <p><strong>Role:</strong> Developed frontend and backend</p>
-    <p><strong>Result:</strong> Successfully deployed with database connection</p>
-  </section>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
 
-  <!-- CERTIFICATIONS -->
-  <div class="certificate-box">
-  <h3>NASSCOM Certification</h3>
-  <p>Industry-level skill certification program.</p>
-</div>
+  <div>
+    <h3>Full Stack Portfolio Website</h3>
+    <p>Contact form saves data to MySQL database using Node.js backend.</p>
+    <p><b>Tech:</b> HTML, CSS, JS, Node.js, MySQL</p>
+  </div>
 
-<div class="certificate-box">
-  <h3>MongoDB Certification</h3>
-  <p>Learned database concepts and MongoDB fundamentals.</p>
-</div>
+</section>
 
-<div class="certificate-box">
-  <h3>Lernathon Certificate</h3>
-  <p>Completed technical learning challenge program.</p>
-</div>
+<!-- ACHIEVEMENTS>
+<section id="achievements">
+  <h2>Achievements</h2>
 
-  <!-- ACHIEVEMENTS -->
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <p>Participated in school and college events and learning programs</p>
-  </section>
+  <ul>
+    <li>Completed NASSCOM Certification Program</li>
+    <li>Completed MongoDB Certification</li>
+    <li>Participated in Lernathon Technical Program</li>
+    <li>Actively learning Full Stack Web Development</li>
+    <p>Participated in college events and learning programs</p>
+  </ul>
+
+</section>
 
     <section id="contact" class="section bg-dark">
         <div class="container">
