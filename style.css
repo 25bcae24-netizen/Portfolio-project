@@ -8,7 +8,7 @@
 
 /* BODY */
 body {
-  background: #0d0d0d;
+  background: #0a0a0a;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -21,75 +21,60 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(10, 10, 10, 0.8);
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
-.logo {
-  font-size: 22px;
+nav h1 {
+  font-size: 24px;
   font-weight: 700;
 }
 
-.logo span {
+nav h1 span {
   color: #ff4ecd;
 }
 
-.nav-links {
+nav ul {
   display: flex;
   list-style: none;
   gap: 30px;
 }
 
-.nav-links a {
+nav ul li a {
   text-decoration: none;
   color: white;
   transition: 0.3s;
 }
 
-.nav-links a:hover {
-  color: #ff4ecd;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0 50px;
-}
-
-.hero h2 {
+nav ul li a:hover {
   color: #00bfff;
 }
 
-.hero h1 {
+/* HERO */
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+#home h2 {
+  color: #00bfff;
+}
+
+#home h1 {
   font-size: 60px;
   margin: 10px 0;
+  background: linear-gradient(45deg, #ff4ecd, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.hero p {
+#home p {
   color: #aaa;
   max-width: 500px;
-}
-
-/* BUTTONS */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-primary {
-  background: linear-gradient(45deg, #ff4ecd, #00bfff);
-  color: black;
-}
-
-.btn-primary:hover {
-  opacity: 0.8;
 }
 
 /* SECTIONS */
@@ -108,7 +93,7 @@ h2::after {
   display: block;
   width: 60px;
   height: 3px;
-  background: #ff4ecd;
+  background: linear-gradient(45deg, #ff4ecd, #00bfff);
   margin: 10px auto;
 }
 
@@ -120,69 +105,34 @@ h2::after {
   color: #ccc;
 }
 
-/* SKILLS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-}
-
-.skill-card {
-  background: #1a1a1a;
+/* EDUCATION */
+#education div {
+  background: #141414;
   padding: 20px;
-  text-align: center;
+  margin: 15px auto;
   border-radius: 10px;
-  transition: 0.3s;
+  max-width: 600px;
+  border-left: 4px solid #ff4ecd;
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
-  background: #222;
+/* SKILLS */
+#skills {
+  text-align: center;
 }
 
-.skill-card i {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #ff4ecd;
+#skills h3 {
+  margin-top: 20px;
+  color: #00bfff;
 }
 
 /* PROJECTS */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background: #1a1a1a;
+#projects div {
+  background: #141414;
+  padding: 20px;
   border-radius: 10px;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: scale(1.03);
-}
-
-.project-card img {
-  width: 100%;
-}
-
-.project-info {
-  padding: 15px;
-}
-
-.project-info h3 {
-  margin-bottom: 10px;
-}
-
-/* EDUCATION & CERTIFICATIONS */
-.education-box, .certificate-box {
-  background: #1a1a1a;
-  padding: 15px;
-  margin: 10px auto;
-  border-radius: 8px;
   max-width: 600px;
+  margin: auto;
+  border-left: 4px solid #00bfff;
 }
 
 /* ACHIEVEMENTS */
@@ -194,29 +144,28 @@ h2::after {
 
 #achievements li {
   margin: 10px 0;
+  color: #ccc;
 }
 
 /* CONTACT */
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+#contact {
+  text-align: center;
 }
 
 .contact-form {
+  margin: auto;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  width: 400px;
 }
 
 .contact-form input,
 .contact-form textarea {
   margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 6px;
   border: none;
-  background: #1a1a1a;
+  background: #141414;
   color: white;
 }
 
@@ -227,6 +176,7 @@ h2::after {
   background: linear-gradient(45deg, #ff4ecd, #00bfff);
   color: black;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .contact-form button:hover {
@@ -238,6 +188,7 @@ footer {
   text-align: center;
   padding: 20px;
   background: #111;
+  color: #aaa;
 }
 
 /* RESPONSIVE */
@@ -247,11 +198,11 @@ footer {
     gap: 10px;
   }
 
-  .hero h1 {
+  #home h1 {
     font-size: 40px;
   }
 
-  .contact-form {
-    width: 100%;
+  section {
+    padding: 60px 20px;
   }
 }
